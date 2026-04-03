@@ -17506,15 +17506,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"se-2@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "se-2@workspace:."
-  dependencies:
-    husky: ^9.1.6
-    lint-staged: ^15.2.10
-  languageName: unknown
-  linkType: soft
-
 "secp256k1@npm:^4.0.1":
   version: 4.0.3
   resolution: "secp256k1@npm:4.0.3"
@@ -19390,6 +19381,15 @@ __metadata:
   checksum: 222d0322bc7bbf6e45c08967863212398313ef73423f4125e075f893a02405a5ffdbaaf150f7dd1e99f8861348a486dd079186d27c5f2c60e465b7dcbb1d3e5b
   languageName: node
   linkType: hard
+
+"united-states@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "united-states@workspace:."
+  dependencies:
+    husky: ^9.1.6
+    lint-staged: ^15.2.10
+  languageName: unknown
+  linkType: soft
 
 "universalify@npm:^0.1.0":
   version: 0.1.2
