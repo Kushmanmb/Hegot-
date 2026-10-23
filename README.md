@@ -1,3 +1,20 @@
+# Ethereum fees and speed research
+
+Independent research toward lower Ethereum L1 transaction costs and inclusion
+latency. This is pre-EIP work, not an approved network upgrade or an official EIP.
+
+Start with the [research guide](research/fees-and-speed/README.md),
+[proposal outline](research/fees-and-speed/proposal-outline.md), and
+[reproducible synthetic results](research/fees-and-speed/results.json).
+
+```sh
+node --test research/fees-and-speed/simulate.test.mjs
+node research/fees-and-speed/simulate.mjs
+```
+
+The original app remains below as a development sandbox. Its sample contract
+does not implement an Ethereum protocol upgrade.
+
 # 🏗 Scaffold-ETH 2
 
 <h4 align="center">
