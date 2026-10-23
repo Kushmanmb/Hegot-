@@ -1,0 +1,29 @@
+name: Fees and speed research
+
+on:
+  pull_request:
+    paths:
+      - "research/fees-and-speed/**"
+      - ".github/workflows/fees-speed-research.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/fees-and-speed/**"
+      - ".github/workflows/fees-speed-research.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  simulation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --test research/fees-and-speed/simulate.test.mjs
+      - name: Verify deterministic results
+        run: |
+          node research/fees-and-speed/simulate.mjs > /tmp/fees-speed-results.json
+          diff -u research/fees-and-speed/results.json /tmp/fees-speed-results.json
