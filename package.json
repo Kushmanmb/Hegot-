@@ -57,5 +57,11 @@
   },
   "engines": {
     "node": ">=20.18.3"
+  },
+  "resolutions": {
+    "elliptic": "6.6.1",
+    "fast-xml-parser": "4.5.7",
+    "handlebars": "4.7.10",
+    "protobufjs": "7.6.6"
   }
 }
